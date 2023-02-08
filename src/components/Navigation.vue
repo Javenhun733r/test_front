@@ -6,25 +6,25 @@
       </div>
       <ul v-show="!mobile" class="navigation">
         <li>
-          <router-link class="link" :to="{name: 'Books'}">
+          <router-link class="link" to="/">
             <font-awesome-icon icon="fa-solid fa-book-open" style="color: white"/>
             Books
           </router-link>
         </li>
         <li>
-          <router-link class="link" :to="{name: 'My vocabulary'}">
+          <router-link class="link" to="/">
             <font-awesome-icon icon="fa-solid fa-clipboard"/>
             My vocabulary
           </router-link>
         </li>
-        <li>
-          <router-link class="link" :to="{name: 'User profile'}">
+        <li>am
+          <router-link class="link" to="/">
             <font-awesome-icon icon="fa-solid fa-user"/>
             Nickname
           </router-link>
         </li>
         <li>
-          <router-link class="link" :to="{name: 'Logout'}">
+          <router-link class="link" to="/">
             <font-awesome-icon icon="fa-solid fa-circle-xmark"/>
             Log out
           </router-link>
@@ -39,25 +39,25 @@
       <transition name="mobile-nav">
         <ul v-show="mobileNav" class="dropdown-nav">
           <li>
-            <router-link class="link" :to="{name: 'Books'}">
+            <router-link class="link" to="/">
               <font-awesome-icon icon="fa-solid fa-book-open" style="color: white"/>
               Books
             </router-link>
           </li>
           <li>
-            <router-link class="link" :to="{name: 'My vocabulary'}">
+            <router-link class="link" to="/">
               <font-awesome-icon icon="fa-solid fa-clipboard"/>
               My vocabulary
             </router-link>
           </li>
           <li>
-            <router-link class="link" :to="{name: 'User profile'}">
+            <router-link class="link" to="/">
               <font-awesome-icon icon="fa-solid fa-user"/>
               My profile
             </router-link>
           </li>
           <li>
-            <router-link class="link" :to="{name: 'Logout'}">
+            <router-link class="link" to="/">
               <font-awesome-icon icon="fa-solid fa-circle-xmark"/>
               Log out
             </router-link>
@@ -71,7 +71,7 @@
 
 <script>
 export default {
-  name: "navig-ation",
+  name: "Navig-ation",
   data() {
     return {
       scrolledNav: null,
@@ -137,7 +137,6 @@ header {
 
     ul,
     .link {
-      font-width: 500;
       color: #fff;
       list-style: none;
       text-decoration: none;
